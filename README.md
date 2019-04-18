@@ -18,16 +18,12 @@
 
 >日积月累的参悟，了然于心。
 
-### vue
-
 1. [基于vue-cli 2的多页面模板](https://guilixie.github.io/vue-mpa/)
 2. [深入vue响应式原理](#)
 3. [谈谈vue组件间的通信](#)
 4. [vue实例的生命周期概览](#)
-
-### webpack
-
-1. [webpack打包优化实践](#)
+5. [webpack打包优化实践](#)
+6. [发布自己的vue插件到npm](https://github.com/guilixie/guilixie.github.io/blog/JavaScript秘籍系列/node/publishVuePluginToNpm.md)
 
 ## 写在后面
 

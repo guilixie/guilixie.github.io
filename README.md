@@ -23,7 +23,7 @@
 3. [谈谈vue组件间的通信](#)
 4. [vue实例的生命周期概览](#)
 5. [webpack打包优化实践](#)
-6. [发布自己的vue插件到npm](https://github.com/guilixie/guilixie.github.io/blog/秘籍系列/node/publishVuePluginToNpm.md)
+6. [发布自己的vue插件到npm](https://github.com/guilixie/guilixie.github.io/blob/master/blog/%E7%A7%98%E7%B1%8D%E7%B3%BB%E5%88%97/node/publishVuePluginToNpm.md)
 
 ## 写在后面
 

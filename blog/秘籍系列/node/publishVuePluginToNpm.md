@@ -1,6 +1,6 @@
 # 发布自己的vue插件到npm
 
-为了方便，采用vue-cli搭建项目，并编写好自己的vue组件。然后修改webpack配置，打包测试插件，书写文档，最后登录npm账号，并发布插件。本文记录了主要流程，作为本次实践的一次记录，完整项目的地址：[vue-resizable-box](https://github.com/guilixie/vue-resizable-box)。
+为了方便，采用`vue-cli`搭建项目，并编写好自己的`vue`组件。然后修改`webpack`配置，打包测试插件，书写文档，最后登录`npm`账号，并发布插件。本文记录了主要流程，作为本次实践的一次记录，完整项目的地址：[vue-resizable-box](https://github.com/guilixie/vue-resizable-box)。
 
 ## 编写插件
 
@@ -144,15 +144,15 @@ if (isProduction) {
 }
 ```
 ### ⚠️ 注意：
-  1. library不能有大写字母/空格/下滑线
-  2. library不能和现有包名重复
-  3. 配置.npmignore可忽略某些私密文件
+  1. `library`不能有大写字母/空格/下滑线；
+  2. `library`不能和现有包名重复；
+  3. 配置`.npmignore`可忽略某些私密文件；
 
 ## 打包测试
 
-* 执行 `npm run build`, 在dist文件夹下生成打包后的代码
-* 测试打包后代码的可执行性，分别用多种方式AMD,ES6,Commonjs以及页面直接引入进行测试
-* 有时间最好进行Vue单元测试，可参考 [Vue单元测试实战教程(Mocha/Karma + Vue-Test-Utils + Chai)(https://www.jianshu.com/p/38a37d5fccb2)]
+* 执行 `npm run build`, 在`dist`文件夹下生成打包后的代码；
+* 测试打包后代码的可执行性，分别用多种方式`AMD,ES6,Commonjs`以及页面直接引入进行测试；
+* 有时间最好进行`Vue`单元测试，可参考 [Vue单元测试实战教程(Mocha/Karma + Vue-Test-Utils + Chai)(https://www.jianshu.com/p/38a37d5fccb2)]；
 
 ## 书写文档
 
@@ -163,9 +163,12 @@ if (isProduction) {
 ## 发布
 
 1. 首先，你得登录 [https://www.npmjs.com/signup](https://www.npmjs.com/signup)， 然后注册一个账号。
+
 2. 若第一次发布，在终端输入`npm adduser`，提示输入账号，密码和邮箱，然后将提示创建成功，此时默认你已经登录了，所以不需要再接着`npm login`；若不是第一次发布，则直接`npm login`，然后接着输入账号，密码和邮箱。
+
 3. 可通过命令`npm whoami`，查看当前登录的用户。
-4. 关于语义化版本（Semantic versioning)，例如：`"version": "x.y.z"`，通过`npm version <update_type>`自动改变版本，`update_type`为`patch`， `minor` 或 `major`其中之一，分别表示补丁，小改，大改。
+
+4. 关于语义化版本（`Semantic versioning`)，例如：`"version": "x.y.z"`，通过`npm version <update_type>`自动改变版本，`update_type`为`patch`， `minor` 或 `major`其中之一，分别表示补丁，小改，大改。
    * 修复bug，小改动，增加z，对应`patch`；
    * 增加了新特性，但仍能向后兼容，增加y，对应`minor`；
    * 有很大的改动，无法向后兼容，增加x，对应`major`；
@@ -173,9 +176,11 @@ if (isProduction) {
 5. 直接`npm publish`，很快就会提示发布成功，并会收到邮件通知。
 
 6. 如果撤销发布的包，这是一种不好的行为，只允许撤销24小时内，可使用命令`npm unpublish <pkg>[@<version>]`。不过你可以采用代替方法`npm deprecate <pkg>[@<version>] <message>`，`message`就是在任何人尝试安装这个包的时候得到的警告。
+
 7. 即使你撤销了已经发布的包，包名和版本号都已不再可用。
 
 #### 参考文章
 
 1. [手把手教你写vue插件并发布（一）](https://www.cnblogs.com/adouwt/p/9211003.html)
+
 2. [利用npm安装/删除/发布/更新/撤销发布包](https://www.cnblogs.com/penghuwan/p/6973702.html)

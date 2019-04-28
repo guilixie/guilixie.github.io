@@ -162,18 +162,18 @@ if (isProduction) {
 
 ## 发布
 
-1. 首先，你得登录 https://www.npmjs.com/signup，然后注册一个账号
-2. 第一次发布，在终端输入`npm adduser`，提示输入账号，密码和邮箱，然后将提示创建成功，此时默认你已经登录了，所以不需要再接着`npm login`；不是第一次发布，则直接`npm login`，然后接着输入账号，密码和邮箱
-3. 可通过命令`npm whoami`,查看当前登录的用户
-4. 关于语义化版本（Semantic versioning),例如： "version": "x.y.z",通过`npm version <update_type>`自动改变版本,`update_type`为`patch`, `minor` 或 `major`其中之一，分别表示补丁，小改，大改
-   * 修复bug,小改动，增加z，对应`patch`
-   * 增加了新特性，但仍能向后兼容，增加y，对应`minor`
-   * 有很大的改动，无法向后兼容,增加x，对应`major`
+1. 首先，你得登录 [https://www.npmjs.com/signup](https://www.npmjs.com/signup)， 然后注册一个账号。
+2. 若第一次发布，在终端输入`npm adduser`，提示输入账号，密码和邮箱，然后将提示创建成功，此时默认你已经登录了，所以不需要再接着`npm login`；若不是第一次发布，则直接`npm login`，然后接着输入账号，密码和邮箱。
+3. 可通过命令`npm whoami`，查看当前登录的用户。
+4. 关于语义化版本（Semantic versioning)，例如：`"version": "x.y.z"`，通过`npm version <update_type>`自动改变版本，`update_type`为`patch`， `minor` 或 `major`其中之一，分别表示补丁，小改，大改。
+   * 修复bug，小改动，增加z，对应`patch`；
+   * 增加了新特性，但仍能向后兼容，增加y，对应`minor`；
+   * 有很大的改动，无法向后兼容，增加x，对应`major`；
 
-5. 直接`npm publish`,很快就会提示发布成功，并会收到邮件通知
+5. 直接`npm publish`，很快就会提示发布成功，并会收到邮件通知。
 
 6. 如果撤销发布的包，这是一种不好的行为，只允许撤销24小时内，可使用命令`npm unpublish <pkg>[@<version>]`。不过你可以采用代替方法`npm deprecate <pkg>[@<version>] <message>`，`message`就是在任何人尝试安装这个包的时候得到的警告。
-7. 即使你撤销了已经发布的包，包名和版本号都已不再可用
+7. 即使你撤销了已经发布的包，包名和版本号都已不再可用。
 
 #### 参考文章
 

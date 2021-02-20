@@ -13,7 +13,7 @@
 > 一招一式的苦练，见招拆招。
 
 1. [谈谈JavaScript的client、offset、scroll三大家族](https://github.com/guilixie/trial-canyon/blob/master/project-trial-base/other/js-offset-client-scroll/README.md)
-
+2. [浅谈前端监控](https://github.com/guilixie/guilixie.github.io/issues/1)
 ## 秘籍系列
 
 >日积月累的参悟，了然于心。
